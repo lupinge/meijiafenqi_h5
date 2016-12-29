@@ -1,0 +1,242 @@
+body, ul, ol, li, p, img, h1, h2, h3, h4, h5, h6, input, form, button {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  border: none;
+  zoom: 1; }
+
+html, body {
+  color: #333;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-size: 0.28rem;
+
+}
+
+::-webkit-input-placeholder {
+  color: #bfbfbf;
+  font-family: helvetica neue, tahoma, arial, hiragino sans gb, microsoft yahei, sans-serif; }
+
+em {
+  font-style: normal; }
+
+img {
+  vertical-align: top;
+  border: 0; }
+
+a, input, i {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: none;
+  outline: none; }
+
+a {
+  cursor: pointer;
+  color: #333; }
+
+a, a:link, a:visited, a:hover, a:active {
+  text-decoration: none; }
+
+.wrap{
+  width: 100%;
+  overflow: hidden;
+  font-size: 0.28rem;
+}
+.header{
+  width: 100%;
+  height: 0.80rem;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1090;
+  padding: 0 0.2rem 0 0.3rem;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+a.logo{
+  display: block;
+  float: left;
+  width: 1.24rem;
+  height: 0.48rem;
+  background: url(./img/logo.png) no-repeat top center;
+  background-size: 1.24rem 0.48rem;
+  margin-top: 0.16rem;
+}
+.nav{
+  height: 0.80rem;
+  overflow: hidden;
+  float: left;
+  margin-left: 0.32rem;
+}
+.nav li{
+  float: left;
+  height: 0.80rem;
+  padding: 0 0.41rem;
+  text-align: center;
+  font-size: 0.26rem;
+  color: #333;
+}
+.nav li a{
+  display: inline-block;
+  height: 0.41rem;
+  line-height: 0.46rem;
+  padding: 0.19rem 0.03rem 0 0.03rem;
+}
+.ios .nav li a{
+  line-height: 0.41rem;
+}
+.nav li.active a{
+  border-bottom: 2px solid #ff1632;
+}
+.user{
+  display: block;
+  float: right;
+  width: 0.36rem;
+  height: 0.36rem;
+  background: url(./img/user.png) no-repeat top left;
+  background-size: 0.35rem 0.35rem;
+  margin-top: 0.22rem;
+}
+/*外框*/
+.imageSlide{
+  position:fixed;
+  overflow:hidden;
+  width: 100%;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  padding-top: 0.80rem;
+  box-sizing: border-box;
+  z-index: 1010;
+}
+.imageSlide ul{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.imageSlide li{
+  width: 100%;
+  height: 100%;
+  float:left;
+  display:inline;
+}
+.imageSlide li.page1{
+  background: url(./img/page1_bg.jpg) no-repeat center center;
+  background-size: cover;
+}
+.imageSlide li.page2{
+  background: url(./img/page2_bg.jpg) no-repeat center center;
+  background-size: cover;
+}
+.imageSlide li.page3{
+  background: url(./img/page3_bg.jpg) no-repeat center center;
+  background-size: cover;
+}
+.imageSlide li img{
+  width: 100%;
+  height: auto;
+}
+/*小按钮样式*/
+.imageSlide .num{
+  position: absolute;
+  left: 0;
+  bottom: 0.45rem;
+  width: 100%;
+  height: 6px;
+  text-align: center;
+}
+.imageSlide .num b{
+  width: 6px;
+  height: 6px;
+  display: inline-block;
+  border-radius: 3px;
+  background-color: rgba(255,255,255,0.5);
+  font-size: 0;
+  vertical-align: top;
+  margin-left: 0.18rem;
+}
+.imageSlide .num b:first-child{
+  margin-left: 0;
+}
+.imageSlide .num .cur{
+  background-color: rgba(255,255,255,1);
+}
+
+.tel-box{
+  height: 0.31rem;
+  position: absolute;
+  left: 1.00rem;
+  bottom: 4.00rem;
+}
+i.i-phone{
+  display: inline-block;
+  width: 0.29rem;
+  height: 0.31rem;
+  background: url(./img/i-phone.png) no-repeat center center;
+  background-size: 0.29rem 0.31rem;
+}
+a.tel-link{
+  color: #eee;
+  display: inline-block;
+  height: 0.31rem;
+  line-height: 0.31rem;
+  vertical-align: top;
+  margin-left: 0.02rem;
+  font-size: 0.24rem;
+}
+.btn-box{
+  height: 0.82rem;
+  width: 100%;
+  position: absolute;
+  bottom: 1.00rem;
+  text-align: center;
+}
+.btn-box a.btn{
+  display: inline-block;
+  width: 2.36rem;
+  height: 0.80rem;
+  border: none;
+  margin-left: 0.60rem;
+  border-radius: 0.10rem;
+  font-size: 0.26rem;
+  line-height: 0.80rem;
+  color: #fff;
+  position: relative;
+}
+.btn-box a.btn:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 1px solid #e5e5e5;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 200%;
+    height: 200%;
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-transform-origin: left top;
+    transform-origin: left top;
+    -webkit-border-radius: 0.20rem;
+    -moz-border-radius: 0.20rem;
+    -o-border-radius: 0.20rem;
+    border-radius: 0.20rem;
+}
+.btn-box a.btn:active{
+  background-color: rgba(0,0,0,0.2)
+}
+.btn-box a.btn:first-child{
+  margin-left: 0;
+}
+
+.slogan-c{
+  position: absolute;
+  width: 5.39rem;
+  height: 4.00rem;
+}
+.slogan-c img{
+  width: 5.39rem;
+  height: 2.10rem;
+}
