@@ -58,6 +58,11 @@
 <script type="text/javascript" src="./touchslide.js"></script>
 <script type="text/javascript">
     $("#imageSlide").touchSlide({isLoop: true,autoTime:10000});
+    if (window.navigator.userAgent.indexOf('Android') > -1) {
+        document.body.className = document.body.className + ' android';
+    } else {
+        document.body.className = document.body.className + ' ios';
+    }
 </script>
 </body>
 </html>
