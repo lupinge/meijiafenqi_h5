@@ -184,7 +184,8 @@ a.tel-link{
   line-height: 0.31rem;
   vertical-align: top;
   margin-left: 0.02rem;
-  font-size: 0.24rem;
+  font-size: 0.26rem;
+  font-weight: 700;
 }
 .btn-box{
   height: 0.82rem;
